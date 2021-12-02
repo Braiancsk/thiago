@@ -212,11 +212,25 @@ aside.menu-mobile{
 
 
 header.hero{
-    background-image: url('../images/BG.gif');
+    /* background-image: url('../images/BG.gif'); */
     background-position: center;
     background-size: cover;
     padding-bottom: 200px;
     position: relative;
+}
+
+.video-hero{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.video-hero > video{
+    object-fit: cover;
 }
 
 header.hero:before{
@@ -355,14 +369,28 @@ section.ddt p{
 }
 
 section.mundos{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #00000096 100%), url(../images/gif-3.gif);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #00000096 100%);
     background-size: cover;
     padding: 60px 0;
     position: relative;
     color:white;
+    overflow: hidden;
 }
 
+.video-mundos{
+    position: absolute;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    object-fit: cover;
+}
 
+.video-mundos video{
+    object-fit: cover;
+}
 
 section.mundos:after{
     content:"";
@@ -373,7 +401,7 @@ section.mundos:after{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
     transform: rotate(180deg);
     width: 100%;
-    height: 10%;
+    height: 12%;
 }
 
 section.mundos:before{
@@ -384,7 +412,7 @@ section.mundos:before{
     right: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
     width: 100%;
-    height: 10%;
+    height: 12%;
 }
 
 section.mundos h2{
@@ -501,7 +529,7 @@ section.something p{
 
 section.play-now{
     position: relative;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/last-gif.gif');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     background-size: cover;
     height:900px;
 }
