@@ -40,7 +40,7 @@
 
     <header class="hero">
         <div class="video-hero">
-            <video width="100%" height="100%" autoplay loop>
+            <video width="100%" height="100%" autoplay="autoplay" loop controls muted> 
                 <source src="videos/BG.mp4" type="video/mp4">
               </video>
         </div><!--video-hero-->
@@ -111,7 +111,7 @@
 
     <section class="mundos">
         <div class="video-mundos">
-            <video width="100%" height="100%" autoplay loop>
+            <video width="100%" height="100%" autoplay="autoplay" loop controls muted>
                 <source src="videos/gif-3.mp4" type="video/mp4">
               </video>
         </div><!--video-hero-->
@@ -125,7 +125,11 @@
                 <div class="col-xl-4 py-3">
                     <div class="mundo-active" id="mundo1">
                         <div class="img-wrapper  d-flex justify-content-center">
-                            <img class="img-fluid" src="images/Imagem.gif" alt="modo de jogo" />
+                            <div class="video-mundo img-wrapper">
+                                <video width="100%" height="100%" autoplay="autoplay" loop controls muted>
+                                    <source src="videos/Imagem.mp4" type="video/mp4">
+                                  </video>
+                            </div><!--video-hero-->
                         </div>    
                         <h6>O MODO DE JOGO MAIS JOGADO</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
@@ -133,7 +137,11 @@
 
                     <div id="mundo2">
                         <div class="img-wrapper   d-flex justify-content-center">
-                            <img class="img-fluid" src="images/mk.gif" alt="modo de jogo" />
+                            <div class="video-mundo img-wrapper">
+                                <video width="100%" height="100%" autoplay="autoplay" loop controls muted>
+                                    <source src="videos/mk_1.mp4" type="video/mp4">
+                                  </video>
+                            </div><!--video-hero-->
                         </div>    
                         <h6>O MODO DE JOGO MAIS JOGADO</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
@@ -141,7 +149,11 @@
 
                     <div id="mundo3">
                         <div class="img-wrapper   d-flex justify-content-center">
-                            <img class="img-fluid" src="images/cod.gif" alt="modo de jogo" />
+                            <div class="video-mundo img-wrapper">
+                                <video width="100%" height="100%" autoplay="autoplay" loop controls muted>
+                                    <source src="videos/cod.mp4" type="video/mp4">
+                                  </video>
+                            </div><!--video-hero-->
                         </div>    
                         <h6>O MODO DE JOGO MAIS JOGADO</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
@@ -203,7 +215,7 @@
 
     <section class="play-now d-flex align-items-center justify-content-center">
         <div class="video-hero">
-            <video width="100%" height="100%" autoplay loop>
+            <video width="100%" height="100%" autoplay="autoplay" loop controls muted>
                 <source src="videos/last-gif.mp4" type="video/mp4">
               </video>
         </div><!--video-hero-->
