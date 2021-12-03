@@ -5,6 +5,11 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 2,
     centeredSlides: true,
     spaceBetween: 10,
+    768: {
+      direction: 'horizontal',
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
   });
 
 let mundo1 = document.getElementById('mundo1');
