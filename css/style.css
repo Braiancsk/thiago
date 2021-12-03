@@ -246,6 +246,7 @@ header.hero:before{
 
 .hamburger{
     display: none;
+    z-index: 999999;
 }
 
 nav ul li{
