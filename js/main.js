@@ -12,6 +12,15 @@ const swiper = new Swiper('.swiper', {
     },
   });
 
+
+  const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    // freeMode: true,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+  });
 let mundo1 = document.getElementById('mundo1');
 let mundo2 = document.getElementById('mundo2');
 let mundo3 = document.getElementById('mundo3');
@@ -171,3 +180,44 @@ btnVideo.addEventListener('click', ()=>{
      bgModal.style.display = 'none';
    }
 });
+
+//images
+
+let tab1 = document.getElementById('tab-1')
+let tab2 = document.getElementById('tab-2')
+let tab3 = document.getElementById('tab-3')
+let tab4 = document.getElementById('tab-4')
+
+let slide1 = document.getElementById('slide1')
+let slide2 = document.getElementById('slide2')
+let slide3 = document.getElementById('slide3')
+let slide4 = document.getElementById('slide4')
+
+
+slide1.addEventListener('click', ()=>{
+  tab1.classList.add('active');
+  tab2.classList.remove('active');
+  tab3.classList.remove('active');
+  tab4.classList.remove('active');
+})
+
+slide2.addEventListener('click', ()=>{
+  tab2.classList.add('active');
+  tab1.classList.remove('active');
+  tab3.classList.remove('active');
+  tab4.classList.remove('active');
+})
+
+slide3.addEventListener('click', ()=>{
+  tab3.classList.add('active');
+  tab2.classList.remove('active');
+  tab1.classList.remove('active');
+  tab4.classList.remove('active');
+})
+
+slide4.addEventListener('click', ()=>{
+  tab4.classList.add('active');
+  tab2.classList.remove('active');
+  tab3.classList.remove('active');
+  tab1.classList.remove('active');
+})
