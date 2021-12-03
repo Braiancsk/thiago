@@ -95,7 +95,6 @@
 
 .form-modal{
     height:100%;
-    height:max-content;
     width: 100%;
     top: 0;
     left: 0;
@@ -168,7 +167,7 @@
     max-width: 314px;
 }
 
-.wrapper-termos label{
+/* .wrapper-termos label{
     background: #C4C4C4;
     border-radius: 50%;
     width: 40px;
@@ -177,7 +176,18 @@
     cursor: pointer;
     position: relative;
     z-index: 999;
-}
+} */
+
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+  }
+  .styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
 
 .wrapper-termos p{
     font-family: Montserrat;
@@ -751,7 +761,6 @@ footer h6{
     }
     .form-modal{
         overflow-y: scroll;
-        max-height: max-content;
         margin: 0 auto;
     }
     .form-modal h2{

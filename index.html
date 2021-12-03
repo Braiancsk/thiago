@@ -337,9 +337,13 @@
            <input class="custom-input" type="text" name="nome" placeholder="Confirme sua senha" required/>
            
            <div class="wrapper-termos d-flex text-white">
-               <input class="d-none checkbox" type="checkbox" name="termos" id="termos" />
-               <label class="termos-check" for="termos"></label>
-               <p>Ao assinalar esta caixa e clicar em “Registrar” você concorda com nossos termos de uso e políticas de privacidade.</p> 
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    <p>Ao assinalar esta caixa e clicar em “Registrar” você concorda com nossos termos de uso e políticas de privacidade.</p> 
+                </label>
+              </div>
+
            </div>
    
            <input class="registrar" type="submit" name="enviar" value="REGISTRAR" />
