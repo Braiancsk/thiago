@@ -613,12 +613,11 @@ section.mundos p{
     text-align: center;
 }
 
-#mundo1,#mundo2,#mundo3{
+#mundo1,#mundo2,#mundo3,#mundo4{
     display: none;
-
 }
 
-#mundo1-btn,#mundo2-btn,#mundo3-btn{
+#mundo1-btn,#mundo2-btn,#mundo3-btn,#mundo4-btn{
     display: none;
     justify-content: end;
 }

@@ -24,21 +24,25 @@ const swiper = new Swiper('.swiper', {
 let mundo1 = document.getElementById('mundo1');
 let mundo2 = document.getElementById('mundo2');
 let mundo3 = document.getElementById('mundo3');
+let mundo4 = document.getElementById('mundo4');
+
 
 let mundo1Btn = document.getElementById('mundo1-btn');
 let mundo2Btn = document.getElementById('mundo2-btn');
 let mundo3Btn = document.getElementById('mundo3-btn');
+let mundo4Btn = document.getElementById('mundo4-btn');
 
 let span1 = document.getElementById('1');
 let span2 = document.getElementById('2');
 let span3 = document.getElementById('3');
-
+let span4 = document.getElementById('4');
 
 mundo1Btn.addEventListener('click', ()=>{  
         mundo1.classList.add('mundo-active');
         span1.classList.add('mundo-title-active');
         span2.classList.remove('mundo-title-active');
         span3.classList.remove('mundo-title-active');
+        span4.classList.remove('mundo-title-active');
         mundo2.classList.remove('mundo-active');
         mundo3.classList.remove('mundo-active');
         
@@ -49,6 +53,7 @@ mundo2Btn.addEventListener('click', ()=>{
     span2.classList.add('mundo-title-active');
     span3.classList.remove('mundo-title-active');
     span1.classList.remove('mundo-title-active');
+    span4.classList.remove('mundo-title-active');
     mundo1.classList.remove('mundo-active');
     mundo3.classList.remove('mundo-active');
 })
@@ -58,8 +63,20 @@ mundo3Btn.addEventListener('click', ()=>{
     span3.classList.add('mundo-title-active');
     span2.classList.remove('mundo-title-active');
     span1.classList.remove('mundo-title-active');
+    span4.classList.remove('mundo-title-active');
     mundo2.classList.remove('mundo-active');
     mundo1.classList.remove('mundo-active');
+})
+
+mundo4Btn.addEventListener('click', ()=>{  
+  mundo4.classList.add('mundo-active');
+  span4.classList.add('mundo-title-active');
+  span2.classList.remove('mundo-title-active');
+  span1.classList.remove('mundo-title-active');
+  span3.classList.remove('mundo-title-active');
+  mundo2.classList.remove('mundo-active');
+  mundo1.classList.remove('mundo-active');
+  mundo3.classList.remove('mundo-active');
 })
 
 //menu
