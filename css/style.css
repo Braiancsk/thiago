@@ -432,8 +432,62 @@ section.ddt p{
     display:flex !important;
     align-items: center;
     height:45px;
-    
 }
+
+.swiper-mundos{
+    max-width:80px;
+    z-index: 999;
+    position: absolute;
+    right: 0;
+}
+
+/* .mundo-title:nth-child(1):after{
+    content: "";
+    width: 80px;
+    height: 73px;
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: url(../images/mundo-1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mundo-title:nth-child(2):after{
+    content: "";
+    width: 80px;
+    height: 73px;
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: url(../images/mundo-2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mundo-title:nth-child(3):after{
+    content: "";
+    width: 80px;
+    height: 73px;
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: url(../images/mundo-1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mundo-title:nth-child(4):after{
+    content: "";
+    width: 80px;
+    height: 73px;
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: url(../images/mundo-2.png);
+    background-position: center;
+    background-size: cover;
+} */
 
 .mundo-title-active{
     background: #FF6404;
@@ -646,7 +700,6 @@ section.mundos p{
 
 .swiper-pagination-bullet{
     background:#00000000; 
-    opacity:0;
 }
 
 .swiper-pagination-bullet-active{
@@ -752,13 +805,18 @@ footer h6{
     }
     #mundo1-btn,#mundo2-btn,#mundo3-btn,#mundo4-btn{
         width: 100%;
-        justify-content: center;
+        
     }
     .img-wrapper img{
         max-height: 400px;
     }
     .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
         left: 140px;
+    }
+    .mundo-title{
+        max-width: 800px;
+        height:40px;
+        padding: 13px;
     }
 }
 
@@ -823,9 +881,15 @@ footer h6{
         width: 100% !important;
     }
     .mundo-title{
-        max-width: 260px;
+        max-width: 400px;
         height:40px;
         padding: 13px;
+    }
+    .swiper-mundos {
+        right: 80px;
+    }
+    .swiper-pagination-bullet{
+        opacity: 1;
     }
 
 }
